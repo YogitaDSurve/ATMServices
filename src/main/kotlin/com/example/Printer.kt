@@ -1,7 +1,10 @@
 package com.example
 
 class Printer {
-    fun print(text: String) {
-        //DO NOT CHANGE. ONLY FOR DEMO PURPOSES.
+    var printMsg=""
+    var count=0
+    fun print(text: String){
+        count++
+        printMsg=text
     }
 }

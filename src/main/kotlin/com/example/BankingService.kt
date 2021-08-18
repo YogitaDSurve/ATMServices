@@ -1,7 +1,10 @@
 package com.example
 
-class BankingService {
-    fun withdraw(amount: Int) {
-        //DO NOT CHANGE. ONLY FOR DEMO PURPOSES.
+class BankingService (var shouldTransactionSucceed: Boolean) {
+    var totalAmount=0
+    fun withdraw(amount: Int){
+        totalAmount=amount
+        if (shouldTransactionSucceed == false||totalAmount==0) throw Exception()
+
     }
 }
